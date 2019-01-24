@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 2</title>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+    <!--Custom Style-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--fontAwsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+<div class="container wrapper">
+    <div class="spacer">&nbsp;</div>
+    <!--card1-->
+    <section class="card1 ">
+        <div class="card">
+            <h5 class="cardHead bgGrey">Recurring Lawn Mowing</h5>
+            <div class="row customRowStyle">
+                <div class="col-md-8 col-sm-12">
+                    <p>
+                        <span class="boldText">Customer </span>
+                        <span class="subText">Kelsey  McMahon</span>
+                    </p>
+                    <p>
+                        <span class="boldText">Address </span>
+                        <span class="subText">4914  West Shore Manor Road, Jamesville, New York 13078</span>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center alignCenterSm text-md-right ">
+                    <div class="btnWrapper">
+                        <button type="button" class="btn btn-primary  btn-sm">VIEW JOB HISTORY</button>
+                    </div>
+                </div>
+                <hr class="customHr">
+            </div>
+
+            <div class="row customRowStyle text-center alignCenterSm text-md-right">
+                <div class="col-md-4 col-sm-12">
+                    <div class="inputWrapper">
+                        <div class="row AlignItemsCenter">
+                            <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                <p class="boldText m0px">Started</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                <div class="inputDiv">
+                                    <input id="DateStarted" class="form-control dateInput"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="row AlignItemsCenter">
+                            <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                <p class="boldText m0px">Next Service</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                <div class="inputDiv">
+                                    <input id="DateNextService" class="form-control dateInput"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="row AlignItemsCenter">
+                            <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                <p class="boldText m0px">End Service On</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                <div class="inputDiv">
+                                    <input id="DateEndServiceOn" class="form-control dateInput"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <div class="inputWrapper">
+                        <div class="row AlignItemsCenter">
+                            <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                <p class="boldText m0px">Recurring Interval</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                <div class="inputDiv">
+                                    <select class="form-control">
+                                        <option>14</option>
+                                        <option>42</option>
+                                        <option>34</option>
+                                        <option>45</option>
+                                        <option>51</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="row AlignItemsCenter">
+                            <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                <p class="boldText m0px">Pause service</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                <div class="inputDiv">
+                                    <span class="switchLabel">off</span>
+                                    <span>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </span>
+                                    <span class="switchLabel">
+                                        On/Activate
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="row AlignItemsCenter">
+                            <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                <p class="boldText m0px">Grass Length</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                <div class="inputDiv">
+                                    <select class="form-control">
+                                        <option>Less than 4 inch</option>
+                                        <option>Less than 2 inch</option>
+                                        <option>Less than 3 inch</option>
+                                        <option>Less than 1 inch</option>
+                                        <option>Less than 5 inch</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="BoxDiv">
+                        <div class="BoxContent">
+                            <p class="BoxTextBold">Lawn Mow Total</p>
+                            <p class="BoxTextBoldGreen">
+
+                                <span class="ValueText">
+                                    <span class="dollerSymbol"><i class="fas fa-dollar-sign"></i></span>XX.00</span>
+                                <span class="unitText">
+                                    <span>per</span>
+                                    <span class="spanText">service</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="customHr">
+            </div>
+
+            <div class="row customRowStyle1">
+                <div class="col-md-7 col-sm-12 additionalBorder">
+                    <h5 class="cardHead ">Manage Add Ons</h5>
+                    <p class="subText">
+                        The customer can also manage these in active jobs by tapping word manage.These will be remain on
+                        the order until turned off.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12">
+                            <div class="inputWrapper">
+                                <div class="row AlignItemsCenter">
+                                    <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                        <p class="boldText m0px">Flower Bed Clean Up
+                                            <span class="spanValue">
+                                                $XX.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                        <div class="inputDiv">
+                                            <span class="switchLabel">off</span>
+                                            <span>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </span>
+                                            <span class="switchLabel">
+                                        On
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="customHr">
+                            <div class="inputWrapper">
+                                <div class="row AlignItemsCenter">
+                                    <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                        <p class="boldText m0px">Edging
+                                            <span class="spanValue">
+                                                $XX.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                        <div class="inputDiv">
+                                            <span class="switchLabel">off</span>
+                                            <span>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </span>
+                                            <span class="switchLabel">
+                                        On
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="customHr">
+                            <div class="inputWrapper">
+                                <div class="row AlignItemsCenter">
+                                    <div class="col-md-6 col-sm-12 text-center alignCenterSm text-sm-right pr0">
+                                        <p class="boldText m0px">Clean Up Clippings
+                                            <span class="spanValue">
+                                                $XX.00
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12  text-center alignCenterSm text-sm-left pl0">
+                                        <div class="inputDiv">
+                                            <span class="switchLabel">off</span>
+                                            <span>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </span>
+                                            <span class="switchLabel">
+                                        On
+                                    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-5 col-sm-12 alignCenterSm">
+                            <div class="BoxDiv1">
+                                <div class="BoxContent">
+                                    <p class="BoxTextBold">Lawn Mow Total</p>
+                                    <p class="BoxTextBoldGreen">
+
+                                <span class="ValueText">
+                                    <span class="dollerSymbol"><i class="fas fa-dollar-sign"></i></span>XX.00</span>
+                                        <span class="unitText">
+                                    <span>per</span>
+                                    <span class="spanText">service</span>
+                                </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button type="button" class="btn btn-link btnLink">View Add On Descriptions <i
+                                        class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                        <hr class="customHr">
+                        <h5 class="cardHead">
+                            <span>
+                                <sapn class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                  <label class="custom-control-label" for="customCheck1" style=" padding-left: 5px;">"Delete job" Jobs From Customer's App</label>
+                                </sapn>
+                            </span>
+                        </h5>
+                        <p class="subtext">
+                            By clicking this box will hide recurring order from this customer's app. Always offer to pause first and only use this if they are requesting to delete.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12 align-items-center">
+                    <h5 class="cardHead">Order Summary</h5>
+                    <p class="subText">
+                        If the pricing is showing $0.00 , then selection is Off.
+                    </p>
+                    <br>
+
+                    <div class="PriceBox">
+                        <div class="priceDiv">
+                            <p class="priceLabel boldText">Lawn Mow</p>
+                            <p class="priceValue">$XX.00</p>
+                        </div>
+                        <div class="priceDiv">
+                            <p class="priceLabel boldText">Edging</p>
+                            <p class="priceValue">$XX.00</p>
+                        </div>
+                        <div class="priceDiv">
+                            <p class="priceLabel boldText">Clean Up Clippings</p>
+                            <p class="priceValue">$XX.00</p>
+                        </div>
+                        <div class="priceDiv">
+                            <p class="priceLabel boldText">Taxes</p>
+                            <p class="priceValue">$XX.00</p>
+                        </div>
+                        <div class="priceDiv TotalPriceDiv">
+                            <p class="priceLabel boldText ">Service Total</p>
+                            <p class="priceValue">$XX.00</p>
+                        </div>
+                    </div>
+                    <div class="btnGroup">
+                        <button type="button" class="btn btn-sm btn1">Cancel</button>
+                        <button type="button" class="btn btn-sm btn2">Save</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <br>
+    <!--card2-->
+    <section class="card2">
+        <div class="card">
+            <div class="fxDiv">
+                <h5 class="cardHead">Notes For Provider</h5>
+                <button type="button" class="btn btn-sm btn2 btn3" disabled>Edit</button>
+            </div>
+            <div class="row customRowStyle2">
+                <div class="col-md-7 col-sm-12">
+                    <div class="form-group">
+                        <textarea class="form-control"  rows="3" placeholder="Customers Notes here"></textarea>
+                    </div>
+
+                    <div class="btnGroup1">
+                        <button type="button" class="btn btn-sm btn1">Cancel</button>
+                        <button type="button" class="btn btn-sm btn2">Save</button>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12">
+                        <div class="ImageDivWrapper">
+                            <div class="imgDiv">
+                                <img src="https://via.placeholder.com/150" alt="images" class="imgItem img-fluid">
+                                <div class="closeBtn">
+                                    <div class="subDiv">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgDiv">
+                                <img src="https://via.placeholder.com/150" alt="images" class="imgItem img-fluid">
+                                <div class="closeBtn">
+                                    <div class="subDiv">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<!--custom Script-->
+<script src="./js/script.js"></script>
+
+</body>
+</html>
